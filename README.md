@@ -1,9 +1,23 @@
 # Capital One Data Science Challenge
 
-This repository contains synthetic data for the [Capital One](https://www.capitalone.com) Data Scientist Recruiting process.  If you're aready in our recruiting process, great! Please see below.
+-   Note: be sure to create a conda environment using the `env.yml` file and ensure you have all the necessary python packages installed from `requirements.txt` before running the notebooks.
 
-If you've come across this repository on your own, feel free to take a look at the data.  If you think you'd be interested in helping us analyze data, whether it is the kind attached or anything else, we're hiring!  We encourage you to check out our opportunities at https://www.capitalonecareers.com/ and share any insights you find with one of our recruiters.
+    -   `conda env create -f env.yml` + `conda activate c1-ds-challenge`
+    -   `pip install -r requirements.txt`
 
+## Folder Structure
 
-## Instructions for Candidates:
-`transactions.zip` contains the data necessary to complete the Data Science Challenge.  Please do not include this data with your submission.
+-   `1_data-analysis.ipynb` contains my answers to Q1 (Load), Q2 (Plot), and Q3 (Data Wrangling - Duplication Transactions) and the code for data loading, preprocessing, and cleaning
+-   `2_feature_engineering.ipynb` contains code for feature engineering to support the modeling section
+-   `3_modeling.ipynb` contains my answers to Q4 (Model) and code for the fraud detection model
+-   `data/` contains the cleaned data as well as additional data files used for feature engineering
+    -   please ensure that the `data/` folder contains `transactions.txt` (the unzipped version of `transactions.zip` from the challenge)
+
+# References
+
+-   https://seaborn.pydata.org/api.html
+-   https://matplotlib.org/stable/api/index.html
+-   https://pandas.pydata.org/docs/reference/index.html
+-   https://numpy.org/doc/stable/reference/index.html
+-   https://xgboost.readthedocs.io/en/stable/
+-   https://scikit-learn.org/stable/modules/classes.html
